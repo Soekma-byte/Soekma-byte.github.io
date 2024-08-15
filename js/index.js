@@ -1,9 +1,9 @@
 // Objek untuk menyimpan kategori BMI dan pesan terkaitnya//
 const BMI_CATEGORIES = {
-  UNDERWEIGHT: '"Kekurangan Berat Badan"',
-  NORMAL: '"Normal (Ideal)"',
+  UNDERWEIGHT: 'Kekurangan Berat Badan',
+  NORMAL: 'Normal (Ideal)',
   OVERWEIGHT: 'Kelebihan Berat Badan',
-  OBESITY: '"Kegemukan (Obesitas)"',
+  OBESITY: 'Kegemukan (Obesitas)',
 };
 
 // Fungsi untuk menghitung BMI berdasarkan berat badan dan tinggi badan//
@@ -29,25 +29,25 @@ const validateInput = (weight, height, age, gender) => {
 
   // Validasi jenis kelamin//
   if (gender === '' || !['Pria', 'Wanita'].includes(gender)) {
-    genderErrorMessage.innerText = '*Pilih Jenis Kelamin Terlebih Dahulu*';
+    genderErrorMessage.innerText = 'Pilih Jenis Kelamin Terlebih Dahulu';
     isValid = false;
   }
 
   // Validasi berat badan//
   if (isNaN(weight) || weight <= 0) {
-    weightErrorMessage.innerText = '*Berat Badan Harus Berupa Angka Lebih Dari 0*';
+    weightErrorMessage.innerText = 'Berat Badan Harus Berupa Angka Lebih Dari 0';
     isValid = false;
   }
 
   // Validasi tinggi badan//
   if (isNaN(height) || height <= 0) {
-    heightErrorMessage.innerText = '*Tinggi Badan Harus Berupa Angka Lebih Dari 0*';
+    heightErrorMessage.innerText = 'Tinggi Badan Harus Berupa Angka Lebih Dari 0';
     isValid = false;
   }
 
   // Validasi usia//
   if (isNaN(age) || age <= 0) {
-    ageErrorMessage.innerText = '*Umur Harus Berupa Angka Lebih Dari 0*';
+    ageErrorMessage.innerText = 'Umur Harus Berupa Angka Lebih Dari 0';
     isValid = false;
   }
 
