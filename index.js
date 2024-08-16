@@ -2,7 +2,7 @@
 const BMI_CATEGORIES = {
   UNDERWEIGHT: '"Kekurangan Berat Badan"',
   NORMAL: '"Normal (Ideal)"',
-  OVERWEIGHT: 'Kelebihan Berat Badan',
+  OVERWEIGHT: '"Kelebihan Berat Badan"',
   OBESITY: '"Kegemukan (Obesitas)"',
 };
 
